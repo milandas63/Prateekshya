@@ -1,0 +1,63 @@
+Prateekshya Patnaik (prateekshya0603@gmail.com)
+https://github.com/milandas63/Prateekshya
+
+1. Create a github id from https://github.com/
+2. What all computer languages do you know?
+    a) C
+    b) C++
+
+3. The objective is to make you ready in Php-Laravel
+4. Course Plan:
+    a) HTML5
+    b) CSS3
+    c) JavaScript
+    d) Java (introductory)
+    e) SQL
+    f) PHP-Laravel
+
++------------------------+
+|   Monday, 11-12-2023   |
++------------------------+
+    =   What is a programming language?
+        A language that can communicate with a computer machine, for example
+        C, C++, Java, Python, etc.
+
+        Programs are written in form of notations that can be read by human
+        users. The machine does'nt understand these notation languages. The machine
+        understands machine language only. The machine language is written using
+        bits, i.e. 0 and 1. The computer languages in form of human readable form
+        must be converted into machine language inorder to be executed by the machine.
+
+        This conversion takes place by a specific tool for the respective language called
+        the compiler. Some computer languages does'nt compile the human readable notation
+        permanently once for all to the machine language.
+
+    C, C++ language (Platform dependent)
+        +--------------+          +-------------+         +-------------+
+        |  C++ language|          |             |         |  Machine    |
+        |  Programmes  |----------|  Compiler   |---------|  Language   |
+        |  .cpp file   |          |             |         |  .exe file  |
+        +--------------+          +-------------+         +-------------+
+         Source files                                      executable files
+
+    Java language (Platform independent)
+        +--------------+          +-------------+         +---------------+
+        |  Java        |          |             |         |  Byte code    |
+        |  Programmes  |----------|  Compiler   |---------|  Language     |----+
+        |  .java       |          |             |         |  .class file  |    |
+        +--------------+          +-------------+         +---------------+    |
+          Source files                                                         |
+                                                        +-----------------+    |
+                                                        |  JRE - Java     |    |
+                                                        |  Runtime Env    |----+
+                                                        |  (On-the-fly)   |
+                                                        |  (Just-in-time) |
+                                                        +-----------------+
+
+    ASSIGNMENT:
+    1.  Write short notes on the following:
+        a)  Source file
+        b)  Executable file
+        c)  Platform independent
+        d)  JIT compiler
+    2.  Create a github id from https://github.com/
