@@ -1,4 +1,4 @@
-Prateekshya Patnaik (prateekshya0603@gmail.com)
+Prateekshya Patnaik (prateekshya0603@gmail.com)  prateekshyapat
 https://github.com/milandas63/Prateekshya
 
 1. Create a github id from https://github.com/
@@ -173,3 +173,6 @@ https://github.com/milandas63/Prateekshya
                 b)  body
         >   The best editor for writting HTML programs is VS-Code.
 
+    =   ASSIGNMENT
+        Write an HTML script to display your resume with photograph? Photograph
+        may be displayed using the <img src=''> element.
