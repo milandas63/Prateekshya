@@ -246,4 +246,5 @@ https://github.com/milandas63/Prateekshya
 +-------------------------+
     =   Hyper link with images
     =   Image Mapping
-    =   
+    =   ASSIGNMENT:
+        Provide links to different shapes in the image figures.jpg?
