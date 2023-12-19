@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Anubhav</title>
+        <script>
+            function check() {
+                var user = document.getElementById('name').value;
+                var pw = document.getElementById('pw').value;
+                //document.writeln(user+" / "+pw);
+                if(user=="Milan" && pw=="root") {
+                    document.writeln("<h1>Valid User</h1>");
+                } else {
+                    document.writeln("<h1>Invalid User</h1>");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Login</h1>
+        <hr><br>
+        <label>Username: </label><br>
+        <input type="text" name="username" id="name" /><br>
+        <br>
+        <label>Password: </label><br>
+        <input type="password" name="password" id="pw" /><br> /><br>
+        <br>
+        <br>
+        <input type="button" onclick="check();" value="Submit" />
+    </body>
+</html>
