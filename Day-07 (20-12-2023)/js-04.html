@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Second Example</title>
+        <script>
+            function pyramid() {
+                var sp = 40;
+                var st = 1;
+                document.writeln("<tt>");
+                for(var i=1; i<=9; i++) {
+                    for(var j=0; j<sp; j++) document.write("&nbsp;");
+                    for(var j=0; j<st; j++) document.write("*");
+                    document.writeln("<br>");
+                    sp--; st+=2;
+                }
+                document.writeln("</tt>");
+            }
+
+            function diamond() {
+                var sp = 40;
+                var st = 1;
+                document.writeln("<tt>");
+                for(var i=1; i<=19; i++) {
+                    for(var j=0; j<sp; j++) document.write("&nbsp;");
+                    for(var j=0; j<st; j++) document.write("*");
+                    document.writeln("<br>");
+                    if(i<9) {
+                        sp--; st+=2;
+                    } else {
+                        sp++; st-=2;
+                    }
+                }
+                document.writeln("</tt>");
+
+            }
+
+            function palindrome() {
+                var sp = 40;
+                document.writeln("<tt>");
+                for(var i=1; i<=9; i++) {
+                    for(var j=0; j<sp; j++) document.write("&nbsp;");
+                    for(var j=1; j<=i; j++) document.write(j);
+                    for(var j=(i-1); j>=1; j--) document.write(j);
+                    document.writeln("<br>");
+                    sp--;
+                }
+                document.writeln("</tt>");
+            }
+
+
+        </script>
+    </head>
+    <body>
+        <ol>
+            <li><a href="javascript:pyramid();">Pyramid</a></li>
+            <li><a href="javascript:diamond();">Diamond</a></li>
+            <li><a href="javascript:palindrome();">Palindrome Numbers</a></li>
+        </ol>
+    </body>
+</html>

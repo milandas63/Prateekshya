@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>DOM</title>
+        <script>
+            function sayhello() {
+                var labelObj = document.getElementById('hello');
+                var name = document.getElementById('name').value;
+                labelObj.innerHTML = "Hello " + name;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Manipulate the DOM object</h1>
+        <hr><br>
+        <label>What is your name? </label><br>
+        <input type="text" id="name"><br>
+        <br><br>
+        <input type="button" value=" Click " onclick="sayhello();" />
+        <br><br>
+        <label id="hello"></label>
+    </body>
+
+</html>
