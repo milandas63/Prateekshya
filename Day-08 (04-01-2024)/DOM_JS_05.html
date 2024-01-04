@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Document</title>
+		<script>
+			function Welcome() {
+				var textObj = document.getElementById("username");
+				var username = textObj.value;
+				var labelObj = document.getElementById("welcome");
+				labelObj.innerHTML = "<h1>"+username+"</h1>";
+				var reverse = "";
+				for(var i=username.length-1; i>=0; i--) {
+					reverse += username[i];
+				}
+				labelObj.innerHTML = "<h1>"+reverse+"</h1>";
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Hello User</h1>
+		<hr><br>
+		<label>What is your name? </label><br>
+		<input type="text" id="username" size="60" />
+		<br><br>
+		<button onClick="javaScript:Welcome();" value=" Click to greet ">Click to greet</button>
+		<br><br>
+		<label id="welcome">x</label>
+		<br><br>
+	</body>
+</html>
