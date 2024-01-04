@@ -75,6 +75,23 @@
                 document.writeln("Original Text:<br>"+text+"<br>");
                 document.writeln("Total Vowels: "+count+"<br>");
             }
+
+            function reverseCase() {
+                var text = "Pack My Box With Five Dozen Liquor Jugs";
+                var result = "";
+                var digit;
+                for(var i=0; i<text.length; i++) {
+                    digit = text.charCodeAt(i);
+                    if(digit>=65 && digit<=90) {
+                        digit += 32;
+                    } else if(digit>=97 && digit<=122) {
+                        digit -= 32;
+                    }
+                    result += String.fromCharCode(digit);
+                }
+                document.writeln("Original:<br>"+text+"<br>");
+                document.writeln("Result:<br>"+result);
+            }
         </script>
     </head>
     <body>
@@ -84,6 +101,7 @@
             <li><a href="javascript:palindrome();">Palindrome Numbers</a></li>
             <li><a href="javascript:reversePalindrome();">Reverse Palindrome Numbers</a></li>
             <li><a href="javascript:countVowels();">Count the Number of Vowels</a></li>
+            <li><a href="javascript:reverseCase();">Reverse Case in a Sentence</a></li>
         </ol>
     </body>
 </html>
