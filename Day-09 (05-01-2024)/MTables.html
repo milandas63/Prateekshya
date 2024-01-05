@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Multiplication Tables</title>
+        <script>
+            function generateTable() {
+                var fromObj = document.getElementById("from");
+                var fromVal = parseInt(fromObj.value);
+                var uptoObj = document.getElementById("upto");
+                var uptoVal = parseInt(uptoObj.value);
+
+                var count = 0;
+
+                document.writeln("<body>");
+                document.writeln("<table border='1'>");
+                document.writeln("<tr>");
+                for(var i=fromVal; i<=uptoVal; i++) {
+                    document.writeln("<td>");
+                    document.writeln("<table>");
+                    for(var j=1; j<=10; j++) {
+                        document.writeln("<tr>");
+                        document.writeln("<td align='right'>"+i+"</td>");
+                        document.writeln("<td align='center'>x</td>");
+                        document.writeln("<td align='right'>"+j+"</td>");
+                        document.writeln("<td align='center'>=</td>");
+                        document.writeln("<td align='right'>"+(j*i)+"</td>");
+                        document.writeln("</tr>");
+                    }
+                    document.writeln("</td>");
+                    document.writeln("</table>");
+                    count++;
+                    if(count>=10) {
+                        count = 0;
+                        document.writeln("</tr>");
+                        document.writeln("<tr>");
+                    }
+                }
+                document.writeln("</tr>");
+                document.writeln("</table>");
+                document.writeln("</body>");
+
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Multiplication Tables Generator</h1>
+        <hr><br>
+        <label>From which table: </label><br>
+        <input type="text" id="from"><br>
+        <br>
+        <label>Upto which table: </label><br>
+        <input type="text" id="upto"><br>
+        <br><br>
+        <button onclick="generateTable();">Generate</button>
+    </body>
+</html>
