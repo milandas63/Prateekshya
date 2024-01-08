@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Sample Table</title>
+        <script>
+        function reverse() {
+            var tableObj = document.getElementById("t1");
+            document.writeln("<body>");
+            document.writeln("<table border='1' cellspacing='5' cellpadding='5'>");
+            document.writeln("<tr>");
+            for(var col=0; col<tableObj.rows[0].cells.length; col++) {
+                document.writeln("<th>"+tableObj.rows[0].cells[col].innerHTML+"</th>");
+            }
+            document.writeln("</tr>");
+            for(var row=tableObj.rows.length-1; row>=1; row--) {
+                document.writeln("<tr>");
+                for(var col=0; col<tableObj.rows[row].cells.length; col++) {
+                    document.writeln("<td>"+tableObj.rows[row].cells[col].innerHTML+"</td>");
+                }
+                document.writeln("</tr>");
+            }
+            document.writeln("</table>");
+            document.writeln("</body>");
+        }
+        </script>
+    </head>
+    <body>
+        <table id="t1" border="1" cellspacing="5" cellpadding="5">
+            <caption align="center"><big>List of Graduates</big></caption>
+            <tr>
+                <th>SLNO</th>
+                <th>CANDIDATE'S NAME</th>
+                <th>FATHER'S NAME</th>
+                <th>EMAIL-ID</th>
+                <th>MOBILE-NO</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Milan Das</td>
+                <td>Das</td>
+                <td>milandas63@gmail.com</td>
+                <td>7978168568</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Prateekshya Patnaik</td>
+                <td>Patnaik</td>
+                <td>somename@gmail.com</td>
+                <td>5858847774</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Anuvab Sengupta</td>
+                <td>Sengupta</td>
+                <td>asengupta@gmail.com</td>
+                <td>7654334955</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Manashi Maharana</td>
+                <td>Maharana</td>
+                <td>mmaharana@gmail.com</td>
+                <td>78695040</td>
+            </tr>
+        </table>
+        <br><br>
+        <input type="button" value=" Reverse " onclick="reverse();">
+        <br><br>
+    </body>
+</html>
