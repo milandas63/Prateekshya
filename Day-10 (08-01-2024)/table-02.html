@@ -7,13 +7,15 @@
             document.writeln("<body>");
             document.writeln("<table border='1' cellspacing='5' cellpadding='5'>");
             document.writeln("<tr>");
-            for(var col=0; col<tableObj.rows[0].cells.length; col++) {
+            //for(var col=0; col<tableObj.rows[0].cells.length; col++) {
+            for(var col=tableObj.rows[0].cells.length-1; col>=0; col--) {
                 document.writeln("<th>"+tableObj.rows[0].cells[col].innerHTML+"</th>");
             }
             document.writeln("</tr>");
             for(var row=tableObj.rows.length-1; row>=1; row--) {
                 document.writeln("<tr>");
-                for(var col=0; col<tableObj.rows[row].cells.length; col++) {
+                //for(var col=0; col<tableObj.rows[row].cells.length; col++) {
+                for(var col=tableObj.rows[row].cells.length-1; col>=0; col--) {
                     document.writeln("<td>"+tableObj.rows[row].cells[col].innerHTML+"</td>");
                 }
                 document.writeln("</tr>");
@@ -32,6 +34,8 @@
                 <th>FATHER'S NAME</th>
                 <th>EMAIL-ID</th>
                 <th>MOBILE-NO</th>
+                <th>DEL</th>
+                <th>EDIT</th>
             </tr>
             <tr>
                 <td>1</td>
