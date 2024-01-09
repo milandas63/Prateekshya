@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Color Chooser</title>
+        <script>
+        function color_chooser() {
+            var colorName = document.getElementById("color-chooser").value;
+            document.body.bgColor = colorName;
+        }
+        </script>
+    </head>
+    <body>
+        <select id="color-chooser" name="color-chooser" size="10" onchange="color_chooser();">
+            <option value="AliceBlue">AliceBlue</option>
+            <option value="AntiqueWhite">AntiqueWhite</option>
+            <option value="Aqua">Aqua</option>
+            <option value="Aquamarine">Aquamarine</option>
+            <option value="Azure">Azure</option>
+            <option value="Beige">Beige</option>
+            <option value="Bisque">Bisque</option>
+            <option value="Black">Black</option>
+            <option value="BlanchedAlmond">BlanchedAlmond</option>
+            <option value="Blue">Blue</option>
+            <option value="BlueViolet">BlueViolet</option>
+            <option value="Brown">Brown</option>
+            <option value="BurlyWood">BurlyWood</option>
+            <option value="CadetBlue">CadetBlue</option>
+            <option value="Chartreuse">Chartreuse</option>
+            <option value="Chocolate">Chocolate</option>
+            <option value="Coral">Coral</option>
+            <option value="CornflowerBlue">CornflowerBlue</option>
+            <option value="Cornsilk">Cornsilk</option>
+            <option value="Crimson">Crimson</option>
+        </select>
+    </body>
+</html>
